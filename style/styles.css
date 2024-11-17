@@ -1,0 +1,351 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100%;
+}
+
+/* Root disini untuk 16 px menjadi 10px dan warna yang dimasukan variabel*/
+:root {
+  font-size: 10px;
+  --primary-color: #ffe31a;
+  --hover-color: #d4bc00;
+}
+
+/* akhir bagian vikri */
+
+.sisi {
+  /* margin-top: 4rem;R */
+  margin-left: 4rem;
+  margin-right: 4rem;
+}
+
+/* disini wisnu membuat nav heheotan */
+.nav {
+  display: flex;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  justify-content: space-between;
+  /* background-color: var(--primary-color); */
+  height: 7rem;
+  align-items: center;
+  backdrop-filter: blur(3px);
+  box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.1);
+  /* position: -ms-page; */
+  position: fixed;
+  width: 100%;
+  z-index: 9999999;
+}
+
+.nav .logo a {
+  font-size: 2rem;
+  /* margin-right: 45.5rem; */
+  text-decoration: none;
+  color: #000;
+  font-weight: 1000;
+}
+
+.nav .menu-nav a {
+  margin: 3rem;
+  font-size: 1.3rem;
+  text-decoration: none;
+  color: #000;
+}
+
+.nav .menu-nav .sign {
+  padding: 0.9rem;
+  border-radius: 1rem;
+  background-color: #fff;
+  border: 2px solid #fff;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav .menu-nav .sign:hover {
+  border: 2px solid #000;
+  background-color: transparent;
+}
+
+/* tah ie all landing page */
+.landing-page {
+  position: relative;
+  width: auto;
+  background-image: url("../img/Cover.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  padding-top: 2rem;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
+.landing-page .kiri {
+  /* background-color: red; */
+  width: 50%;
+  height: 80vh;
+  align-items: center;
+  margin: 0 auto;
+  text-align: left;
+  padding-top: 13rem;
+}
+
+.landing-page .kiri h1,
+i {
+  width: auto;
+  margin: auto;
+  font-size: 3.5rem;
+  font-weight: 400;
+}
+
+.landing-page .kiri p {
+  margin-top: 3rem;
+}
+
+.landing-page .kiri button {
+  padding: 0.8rem;
+  margin-top: 1rem;
+  background-color: transparent;
+  border: 2px solid var(--primary-color);
+  border-radius: 1rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.landing-page .kiri button:hover {
+  border: 2px solid var(--primary-color);
+  background-color: var(--primary-color);
+}
+
+/* didie lannding page nya anj */
+.landing-page .kanan {
+  height: 80vh;
+  width: 50%;
+  background-image: url("../img/logo\ risol.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+/* Wisnu membuat card */
+.daftar-menu {
+  width: auto;
+  position: relative;
+  height: 100vh;
+  /* background-color: aqua; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* margin: 199; */
+  /* column-gap: 4; */
+  /* background-color: #fff; */
+  flex-wrap: wrap;
+  /* z-index: 92929292; */
+}
+
+.daftar-menu .menu {
+  border-radius: 1rem;
+  box-shadow: 1px 1px 10px 0px rgba(0, 0, 0, 0.1);
+  margin: 3rem;
+  padding: 4rem;
+  background-color: #fff;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: auto;
+  gap: 1;
+  transition: all 0.2s ease-in-out;
+  /* display: flex; */
+}
+
+.daftar-menu .menu:hover{
+  transform: scale(1) translateY(-10px);
+}
+
+.daftar-menu .menu img {
+  /* width: 120000px; */
+  display: flex;
+  border-radius: 0.5rem;
+  border: 0.1rem solid var(--primary-color);
+  width: auto;
+  padding: auto;
+  margin: auto;
+  justify-content: center;
+}
+
+.daftar-menu .menu p {
+  width: 24rem;
+}
+
+.daftar-menu .menu button {
+  justify-content: center;
+  background-color: var(--primary-color);
+  border: none;
+  padding: 0.7rem;
+  margin-top: 0.5rem;
+  width: 100rem;
+  max-width: 24rem;
+  border-radius: 1rem;
+  transition: all 0.2s ease-in-out;
+  /* text-align: center*/
+}
+
+/* Style buat border tambahin aja yang lain yaa hover nih bisa disni */
+.daftar-menu .menu button:hover {
+  background-color: var(--hover-color);
+}
+
+/* Slider Styles */
+#creator {
+  width: auto;
+  height: 100vh;
+  margin-top: 18rem;
+}
+
+#creator .judul h1 {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+#creator .by {
+  display: flex;
+  /* flex-wrap: wrap; */
+  text-align: center;
+  overflow-x: scroll;
+  gap: 20px;
+  width: 100%;
+  scroll-snap-type: x mandatory;
+}
+
+.swiper-container {
+  width: 100%;
+  padding: 20px 0;
+  overflow: hidden; /* Ensure no overflow */
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease; /* Smooth transition for scaling */
+  position: relative; /* Position for shadow effect */
+}
+
+.swiper-slide img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth effect */
+}
+
+.swiper-slide-active img {
+  transform: scale(1.1); /* Scale the active slide */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5); /* Enhance shadow for active slide */
+}
+
+.swiper-slide:not(.swiper-slide-active) img {
+  opacity: 0.7; /* Slightly dim inactive slides */
+}
+
+/* Ensure the container holds both the image and name */
+.creator-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+}
+
+.creator-card img {
+  width: 100%;
+  max-width: 200px; /* Adjust size based on design */
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Styles for creator names below images */
+.creator-name {
+  margin-top: 30px;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333; /* You can adjust the color as needed */
+  text-align: center;
+}
+
+/* contack kam ya dong anjuy */
+.contact-we {
+  width: auto;
+  /* background-color: #d4bc00; */
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.contact-we .kotak-contak {
+  width: 20%;
+  border-radius: 2rem;
+  margin: 2rem;
+  height: 46vh;
+  padding: 2rem;
+  background-color: rgba(0, 0, 0, 0.1);
+  gap: 4;
+  transition: all 0.2s ease-in-out;
+}
+
+.contact-we .kotak-contak:hover{
+  box-shadow: 1px 2px 10px 0px rgba(0, 0, 0, 0.1);
+  transform: scale(1) translateY(-10px);
+  background-color: #fff;
+}
+
+.contact-we i {
+  border: 4px solid var(--primary-color);
+  padding: 1rem;
+  border-radius: 50%;
+  margin: 2rem;
+}
+
+.contact-we button {
+  padding: 1rem;
+  border-radius: 2rem;
+  margin: 1rem;
+  border: 2px solid var(--primary-color);
+  background-color: transparent;
+  transition: all 0.2s ease-in-out;
+}
+
+.contact-we button:hover{
+  background-color: var(--primary-color);
+}
+
+/* ini footer yaa deee */
+footer {
+  width: auto;
+  /* height: vh; */
+  padding: 0.9rem;
+  text-align: center;
+  /* background-color: #d4bc00; */
+  box-shadow: 0px -3px 10px 0px rgba(0, 0, 0, 0.1);
+}
+
+footer h1 {
+  font-weight: 300;
+}
