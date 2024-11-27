@@ -79,10 +79,6 @@ body {
 .landing-page {
   position: relative;
   width: auto;
-  background-image: url("../img/Cover.svg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
   padding-left: 4rem;
   padding-right: 4rem;
   padding-top: 2rem;
@@ -133,10 +129,6 @@ i {
 .landing-page .kanan {
   height: 80vh;
   width: 50%;
-  background-image: url("../img/logo\ risol.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
   align-items: center;
   display: flex;
   justify-content: center;
@@ -173,7 +165,7 @@ i {
   /* display: flex; */
 }
 
-.daftar-menu .menu:hover{
+.daftar-menu .menu:hover {
   transform: scale(1) translateY(-10px);
 }
 
@@ -310,7 +302,7 @@ i {
   transition: all 0.2s ease-in-out;
 }
 
-.contact-we .kotak-contak:hover{
+.contact-we .kotak-contak:hover {
   box-shadow: 1px 2px 10px 0px rgba(0, 0, 0, 0.1);
   transform: scale(1) translateY(-10px);
   background-color: #fff;
@@ -332,7 +324,7 @@ i {
   transition: all 0.2s ease-in-out;
 }
 
-.contact-we button:hover{
+.contact-we button:hover {
   background-color: var(--primary-color);
 }
 
