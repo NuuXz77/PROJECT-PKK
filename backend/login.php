@@ -22,7 +22,7 @@ if (isset($_POST)) {
         if (password_verify($pass, $rs['password'])) {
             $_SESSION['username'] = $rs['username'];
             $_SESSION['email'] = $email;
-            // header("Location: ../dashboard.php");
+            header("Location: ../dashboard/dashboard");
             echo "Login Berhasil";
             exit();
         } else {

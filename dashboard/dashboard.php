@@ -3,7 +3,7 @@ include '../backend/koneksi/koneksi.php';
 session_start();
 
 if (!isset($_SESSION['email'])) {
-    header('Location: ../login_form.php');
+    header('Location: ../login_form');
 }
 ?>
 
