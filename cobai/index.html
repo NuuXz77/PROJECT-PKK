@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Navbar</title>
+  <!-- Link to Boxicons -->
+  <link href="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+  <style>
+    /* General Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Navbar */
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background: #fff;
+      z-index: 999;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .logo img {
+      width: 40px;
+      display: block;
+    }
+
+    .menu-nav {
+      display: flex;
+      gap: 2rem;
+      align-items: center;
+    }
+
+    .menu-nav a {
+      text-decoration: none;
+      font-size: 1.2rem;
+      color: #000;
+      transition: color 0.3s ease;
+    }
+
+    .menu-nav a:hover {
+      color: #007BFF;
+    }
+
+    .menu-nav .sign {
+      padding: 0.5rem 1rem;
+      border: 2px solid #007BFF;
+      border-radius: 5px;
+      color: #007BFF;
+      transition: all 0.3s ease;
+    }
+
+    .menu-nav .sign:hover {
+      background: #007BFF;
+      color: #fff;
+    }
+
+    /* Burger Icon */
+    .burger {
+      display: none;
+      font-size: 2rem;
+      cursor: pointer;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .menu-nav {
+        display: none;
+        flex-direction: column;
+        gap: 1rem;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        background: #fff;
+        width: 100%;
+        padding: 1rem;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+      }
+
+      .menu-nav.active {
+        display: flex;
+      }
+
+      .burger {
+        display: block;
+      }
+    }
+  </style>
+</head>
+<body>
+  <section>
+    <!-- Navbar -->
+    <div class="nav">
+      <div class="logo">
+        <a href="#"><img src="img/I.svg" alt="Logo"></a>
+      </div>
+      <!-- Burger Button -->
+      <div class="burger" id="burger">
+        <i class="bx bx-menu"></i>
+      </div>
+      <!-- Navigation Menu -->
+      <div class="menu-nav" id="menu-nav">
+        <a href="#home">Home</a>
+        <a href="#menu">Menu</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <a class="sign" href="login_form.php">Sign In / Sign Up</a>
+      </div>
+    </div>
+
+    <!-- Landing Page Section -->
+    <div class="landing-page" id="home">
+      <div class="kiri">
+        <h1>Selamat Datang Di Website <i>Safsar~</i></h1>
+        <p>
+          di sini kami menyediakan produk makanan dan juga minuman harga
+          produk terjangkau mulai dari harga 3rb - 5rb
+        </p>
+        <button>Order Yuk!</button>
+      </div>
+      <div class="kanan">
+        <img src="img/landing.svg" alt="Landing Image">
+      </div>
+    </div>
+  </section>
+
+  <script>
+    // Burger Menu Toggle
+    const burger = document.getElementById('burger');
+    const menuNav = document.getElementById('menu-nav');
+
+    burger.addEventListener('click', () => {
+      menuNav.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>

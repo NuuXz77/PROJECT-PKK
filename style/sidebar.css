@@ -144,7 +144,11 @@
     }
 
     .height-100 {
+<<<<<<< HEAD
         height: 100vh;
+=======
+        height: 90vh;
+>>>>>>> 68d6b83 (DONE)
         /* top: 30px; */
     }
 

@@ -87,7 +87,11 @@ body {
   align-items: center;
   justify-content: center;
   margin: auto;
+<<<<<<< HEAD
   background-image: url('../img/Cover.svg');
+=======
+  background-image: url("../img/Cover.svg");
+>>>>>>> 68d6b83 (DONE)
   background-size: cover;
 }
 
@@ -101,7 +105,12 @@ body {
   padding-top: 13rem;
 }
 
+<<<<<<< HEAD
 .landing-page .kiri h1,i {
+=======
+.landing-page .kiri h1,
+i {
+>>>>>>> 68d6b83 (DONE)
   width: auto;
   margin: auto;
   font-size: 3.5rem;
@@ -135,6 +144,7 @@ body {
   justify-content: center;
 }
 
+<<<<<<< HEAD
 .produk .judul{
     /* background-color: #d4bc00; */
     justify-content: space-between;
@@ -145,10 +155,25 @@ body {
 .produk .judul h2{
     
     font-size: 2rem;
+=======
+.produk .judul {
+  /* background-color: #d4bc00; */
+  justify-content: space-between;
+  display: flex;
+  margin-top: 4rem;
+}
+
+.produk .judul h2 {
+  font-size: 2rem;
+>>>>>>> 68d6b83 (DONE)
 }
 
 /* Wisnu membuat card */
 .daftar-menu {
+<<<<<<< HEAD
+=======
+  border: 1px solid blue;
+>>>>>>> 68d6b83 (DONE)
   width: auto;
   position: relative;
   height: 100vh;
@@ -217,6 +242,7 @@ body {
 }
 
 /* ini about ya dek */
+<<<<<<< HEAD
 .weare{
     margin-top: 10rem;
     width: auto;
@@ -265,6 +291,57 @@ body {
     justify-content: center;
     align-items: center;
     display: flex;
+=======
+.weare {
+  /* padding-top: 100rem; */
+  width: auto;
+  display: flex;
+  position: relative;
+  height: auto;
+}
+
+.weare .isi {
+  /* background-color: aqua; */
+  width: 40%;
+  margin: auto;
+  list-style: none;
+}
+
+.weare .isi h1 {
+  font-size: 2.5rem;
+  font-weight: 350;
+  margin-bottom: 4rem;
+}
+
+.weare .isi i {
+  color: var(--primary-color);
+  margin-right: 1rem;
+}
+
+.weare .isi i,
+ul li {
+  list-style: none;
+  align-items: center;
+  display: inline-flex;
+  font-size: 1.9rem;
+  margin-left: 2rem;
+  /* padding: 1rem; */
+}
+
+.weare .isi {
+  /* background-color: #333; */
+  width: 60%;
+  justify-content: center;
+  margin: auto;
+  align-items: center;
+}
+
+.weare .isi img {
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+>>>>>>> 68d6b83 (DONE)
 }
 
 /* Slider Styles */

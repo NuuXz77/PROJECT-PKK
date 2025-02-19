@@ -15,7 +15,10 @@ body {
   width: 100%;
 }
 
+<<<<<<< HEAD
 /* Root disini untuk 16 px menjadi 10px dan warna yang dimasukan variabel*/
+=======
+>>>>>>> 68d6b83 (DONE)
 :root {
   font-size: 10px;
   --primary-color: #ffe31a;
@@ -31,12 +34,17 @@ body {
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+<<<<<<< HEAD
   width: 100%; /* Pastikan elemen memenuhi lebar penuh */
   /* gap: 2rem; Tambahkan jarak antar elemen jika perlu */
+=======
+  width: 100%;
+>>>>>>> 68d6b83 (DONE)
 }
 
 .full .kiri,
 .full .kanan {
+<<<<<<< HEAD
   width: 50%; /* Atur lebar masing-masing elemen */
   height: 100vh; /* Tinggi elemen relatif terhadap viewport */
   display: flex;
@@ -46,6 +54,16 @@ body {
   font-size: 2rem; /* Contoh ukuran font */
   color: #000;
   /* border-radius: 8px; Opsional: memberikan efek melengkung */
+=======
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  color: #000;
+>>>>>>> 68d6b83 (DONE)
 }
 
 .full .kiri {
@@ -84,8 +102,13 @@ body {
 
 .input-field input,
 .password-field input {
+<<<<<<< HEAD
   width: 100%;
   padding: 1rem 15rem 1rem 3.5rem; /* Space for icon */
+=======
+  width: 50vh;
+  padding: 1rem 4rem 1rem 3.5rem;
+>>>>>>> 68d6b83 (DONE)
   font-size: 1.3rem;
   outline: 1px solid #000;
   box-sizing: border-box;
@@ -133,8 +156,26 @@ body {
   background-color: var(--hover-color);
 }
 
+<<<<<<< HEAD
 .full .kanan {
   /* background-image: url("../img/account.svg"); */
+=======
+.full p,
+a {
+  margin-top: 1rem;
+  font-size: 1.3rem;
+  text-decoration: none;
+  color: #000;
+  transition: all 0.1s ease-in-out;
+}
+
+.full a:hover {
+  text-decoration: underline;
+  color: var(--hover-color);
+}
+
+.full .kanan {
+>>>>>>> 68d6b83 (DONE)
   background-size: cover;
   text-align: center;
   margin: auto;
@@ -168,3 +209,66 @@ body {
 .full .kanan .isi a:hover {
   background-color: var(--primary-color);
 }
+<<<<<<< HEAD
+=======
+
+/* Media Query untuk layar kecil */
+@media screen and (max-width: 768px) {
+  .full {
+    flex-direction: column;
+    height: auto;
+    padding: 2rem;
+  }
+
+  .full .kiri,
+  .full .kanan {
+    width: 100%;
+    height: auto;
+    margin-bottom: 2rem;
+  }
+
+  .full .kiri {
+    margin-top: 0;
+    width: 90%;
+    height: auto;
+  }
+
+  .input-field input,
+  .password-field input {
+    width: 100%;
+    padding: 1rem 4rem 1rem 3.5rem;
+  }
+
+  .password-field .toggle-password {
+    right: 1rem;
+  }
+
+  .full .kiri .fl {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .full .kiri .fl button {
+    width: 100%;
+  }
+
+  .full .kanan .isi h1 {
+    font-size: 2.5rem;
+  }
+}
+
+/* Media Query untuk layar sedang */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .full .kiri,
+  .full .kanan {
+    width: 50%;
+    height: auto;
+  }
+
+  .input-field input,
+  .password-field input {
+    width: 100%;
+    font-size: 1.2rem;
+  }
+}
+>>>>>>> 68d6b83 (DONE)
