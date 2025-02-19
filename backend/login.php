@@ -19,6 +19,7 @@ if (isset($_POST)) {
     // // echo $random_pass;
     // die();
     if ($rs) {
+<<<<<<< HEAD
         if (password_verify($pass, $rs['password'])) {
             $_SESSION['username'] = $rs['username'];
             $_SESSION['email'] = $email;
@@ -36,5 +37,39 @@ if (isset($_POST)) {
                     alert('Email Tidak Ditemukan !!!');
                     window.location.href = '../login_form.php';
                 </script>";
+=======
+        if($rs['status'] == 'Terverifikasi'){
+            if (password_verify($pass, $rs['password']) && $rs['level'] == 'member') {
+                $_SESSION['username'] = $rs['username'];
+                $_SESSION['email'] = $email;
+                $_SESSION['profile_image'] = $rs['profile_image'];
+                $_SESSION['id_users'] = $rs['id_users'];
+                $_SESSION['level'] = $rs['level'];
+                $_SESSION['status'] = "success, Berhasil !, Login Berhasil !, #ffe31a";
+                header("Location: ../dashboard/dashboard"); 
+                echo "Login Berhasil";
+                exit();
+            } else if (password_verify($pass, $rs['password']) && $rs['level'] == 'admin') {
+                $_SESSION['username'] = $rs['username'];
+                $_SESSION['email'] = $email;
+                $_SESSION['profile_image'] = $rs['profile_image'];
+                $_SESSION['id_users'] = $rs['id_users'];
+                $_SESSION['level'] = $rs['level'];
+                $_SESSION['status'] = "success, Berhasil !, Login Berhasil !, #ffe31a";
+                header("Location: ../dashboard/dashboard");
+                echo "Login Berhasil";
+                exit();
+            } else {
+                $_SESSION['status'] = "error, Gagal !, Password Salah !, #dc3545";
+                header( "Location: ../login_form.php");
+            }
+        } else{
+            $_SESSION['status'] = "error, Gagal !, Silahkan Verifikasi Email !, #dc3545";
+            header("Location: ../login_form.php");
+        }
+    } else {        
+        $_SESSION['status'] = "error, Gagal !, Email Tidak Di temukan !, #dc3545";
+        header("Location: ../login_form.php");
+>>>>>>> 68d6b83 (DONE)
     }
 }
